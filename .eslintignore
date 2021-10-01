@@ -1,0 +1,9 @@
+rollup.config.ts
+jest.config.js
+*.log
+.DS_Store
+node_modules
+dist
+coverage
+
+*.spec.ts
