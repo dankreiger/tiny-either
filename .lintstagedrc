@@ -6,5 +6,5 @@
   "*.md,*.yml": [
     "prettier --write"
   ],
-  "*.js": "eslint --cache --fix"
+  "*.js": "eslint --quiet --cache --fix"
 }

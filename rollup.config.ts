@@ -8,18 +8,7 @@ const babelRuntimeVersion = pkg.devDependencies['@babel/runtime'].replace(
   /^[^0-9]*/,
   ''
 );
-const cjs = () => [
-  terser({
-    output: { comments: false },
-    compress: {
-      unsafe: true,
-      keep_infinity: true,
-      pure_getters: true,
-      passes: 10,
-    },
-    ecma: 5,
-  }),
-];
+
 const config = [
   {
     file: pkg.main,
@@ -86,7 +75,16 @@ const config = [
       ],
       babelHelpers: 'runtime',
     }),
-    ...[output.format === 'cjs' && cjs()],
+    terser({
+      output: { comments: false },
+      compress: {
+        unsafe: true,
+        keep_infinity: true,
+        pure_getters: true,
+        passes: 10,
+      },
+      ecma: output.format === 'es' ? 2020 : 5,
+    }),
   ],
   external: [...Object.keys(pkg.devDependencies)],
 }));

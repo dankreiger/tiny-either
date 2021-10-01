@@ -15,5 +15,5 @@
   "plugins": [
     "@typescript-eslint",
     "jest"
-  ]
+  ],
 }
