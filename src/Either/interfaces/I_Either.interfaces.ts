@@ -13,4 +13,5 @@ export interface I_Either {
   Right: typeof Right;
   fromNullable: typeof fromNullable;
   tryCatch: typeof tryCatch;
+  of: typeof Right;
 }

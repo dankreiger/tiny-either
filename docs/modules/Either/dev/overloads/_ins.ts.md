@@ -6,9 +6,9 @@ parent: Modules
 
 ## \_ins overview
 
-Added in v1.0.5
+Added in v1.0.6
 
-- ***
+---
 
 <h2 class="text-delta">Table of contents</h2>
 
@@ -27,4 +27,4 @@ Added in v1.0.5
 export declare function _ins<T extends 'Left' | 'Right', U>(Type: T, x: U): T_InspectVal<T>
 ```
 
-Added in v1.0.5
+Added in v1.0.6

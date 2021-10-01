@@ -1,3 +1,4 @@
+import { inspect } from './dev';
 import type { I_Either } from './interfaces';
 import { Left } from './Left';
 import { Right } from './Right';
@@ -11,4 +12,7 @@ export const Either: I_Either = {
   tryCatch,
   Left,
   Right,
+  of: Right,
 };
+
+export { inspect };

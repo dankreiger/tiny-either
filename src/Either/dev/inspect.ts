@@ -7,9 +7,8 @@ import type { T_EitherInspect } from './types';
 
 /**
  * @since 1.0.5
- * @internal
  * @description
- * calls inspect on the contained value (dev only)
+ * attaches a dev inspect propery to the Monad
  * @param {I_Either} E
  */
 export function inspect(E: I_Either): T_EitherInspect {
