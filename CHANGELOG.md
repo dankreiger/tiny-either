@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dankreiger/tiny-either/compare/v1.0.1...v1.0.2) (2021-10-01)
+
+
+### Bug Fixes
+
+* remove never types ([bc9ffa7](https://github.com/dankreiger/tiny-either/commit/bc9ffa78c09f51a15e2beca2cd11b1d48765a605))
+
 ## [1.0.1](https://github.com/dankreiger/tiny-either/compare/v1.0.0...v1.0.1) (2021-10-01)
 
 
