@@ -1,19 +1,26 @@
 [
   {
-    "name": "CommonJS",
-    "path": "./dist/cjs/index.js",
-    "limit": "140 B"
-  },
-  {
-    "name": "ESM: Either",
+    "name": "ESM: Left",
     "path": "./dist/esm/index.js",
     "limit": "5 B",
-    "import": "Either"
+    "import": "{ Left }"
   },
   {
-    "name": "ESM: inspect",
+    "name": "ESM: Right",
     "path": "./dist/esm/index.js",
-    "limit": "125 B",
-    "import": "{ inspect }"
+    "limit": "5 B",
+    "import": "{ Right }"
+  },
+  {
+    "name": "ESM: fromNullable",
+    "path": "./dist/esm/index.js",
+    "limit": "5 B",
+    "import": "{ fromNullable }"
+  },
+  {
+    "name": "ESM: tryCatch",
+    "path": "./dist/esm/index.js",
+    "limit": "5 B",
+    "import": "{ tryCatch }"
   }
 ]
