@@ -26,7 +26,6 @@
     "dist"
   ],
   "scripts": {
-    "analyze": "scripty",
     "build": "scripty",
     "clean": "scripty",
     "docs": "scripty",
@@ -36,6 +35,7 @@
     "prepare": "scripty",
     "semantic-release": "semantic-release",
     "size": "scripty",
+    "size:analyze": "scripty",
     "test": "jest"
   },
   "devDependencies": {

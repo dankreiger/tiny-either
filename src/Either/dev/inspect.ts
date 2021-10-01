@@ -7,6 +7,7 @@ import type { T_EitherInspect } from './types';
 
 /**
  * @since 1.0.5
+ * @internal
  * @description
  * calls inspect on the contained value (dev only)
  * @param {I_Either} E

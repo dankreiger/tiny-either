@@ -4,3 +4,4 @@ node_modules
 dist
 coverage
 jest.config.ts
+rollup.config.ts
