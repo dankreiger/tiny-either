@@ -12,4 +12,19 @@ Added in v1.0.6
 
 <h2 class="text-delta">Table of contents</h2>
 
+- [utils](#utils)
+  - [inspect](#inspect)
+
 ---
+
+# utils
+
+## inspect
+
+**Signature**
+
+```ts
+export declare function inspect(E: I_Either): T_EitherInspect
+```
+
+Added in v1.0.5

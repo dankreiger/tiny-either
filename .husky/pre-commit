@@ -7,5 +7,5 @@ if [ "$CURRENT_BRANCH" = "main" ]; then
   exit 1
 fi
 npm run build
-npm run docs
+npm run docs &&
 npx lint-staged
