@@ -1,4 +1,4 @@
-/** @since 1.0.5 */
+/** @since 1.0.6 */
 import type { I_Either } from '../interfaces';
 import { Left } from '../Left';
 import { Right } from '../Right';
