@@ -6,25 +6,10 @@ parent: Modules
 
 ## \_ins overview
 
-Added in v1.0.5
-
-- ***
-
-<h2 class="text-delta">Table of contents</h2>
-
-- [utils](#utils)
-  - [\_ins](#_ins)
+Added in v1.0.6
 
 ---
 
-# utils
+<h2 class="text-delta">Table of contents</h2>
 
-## \_ins
-
-**Signature**
-
-```ts
-export declare function _ins<T extends 'Left' | 'Right', U>(Type: T, x: U): T_InspectVal<T>
-```
-
-Added in v1.0.5
+---

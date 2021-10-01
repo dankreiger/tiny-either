@@ -24,7 +24,6 @@ Added in v0.0.0
 **Signature**
 
 ```ts
-export declare function tryCatch<T extends Error>(f: () => T): I_Left<T>
 export declare function tryCatch<T>(f: () => T): I_Right<T>
 ```
 
