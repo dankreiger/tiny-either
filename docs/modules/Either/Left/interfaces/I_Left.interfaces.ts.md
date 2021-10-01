@@ -25,9 +25,9 @@ Added in v1.0.0
 
 ```ts
 export interface I_Left<T> {
-  chain: (f: never) => I_Left<T>
-  map: (f: never) => I_Left<T>
-  fold: <R>(f: (x: T) => R, _: never) => R
+  chain: (f: (x: any) => any) => I_Left<T>
+  map: (f: (x: any) => any) => I_Left<T>
+  fold: <R>(f: (x: T) => R, g: (x: any) => any) => R
   inspect: () => `Left(${string})`
 }
 ```
