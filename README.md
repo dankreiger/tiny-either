@@ -15,3 +15,5 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 ```bash
   npm install tiny-either
 ```
+
+More info coming
