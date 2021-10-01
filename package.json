@@ -26,23 +26,23 @@
     "dist"
   ],
   "scripts": {
-    "analyze": "size-limit --why",
+    "analyze": "scripty",
     "build": "scripty",
     "clean": "scripty",
     "docs": "scripty",
     "format:check": "scripty",
     "format:write": "scripty",
     "lint": "scripty",
-    "prepare": "husky install",
+    "prepare": "scripty",
     "semantic-release": "semantic-release",
-    "size": "size-limit",
+    "size": "scripty",
     "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "7.15.5",
+    "@babel/plugin-transform-runtime": "7.15.0",
     "@babel/preset-env": "7.15.6",
     "@babel/preset-typescript": "7.15.0",
-    "@babel/plugin-transform-runtime": "7.15.0",
     "@babel/runtime": "7.15.4",
     "@commitlint/cli": "13.2.0",
     "@commitlint/config-conventional": "13.2.0",

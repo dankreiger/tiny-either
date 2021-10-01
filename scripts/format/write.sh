@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
-echo "┏━━━ 🕵️‍♀️ FORMAT: write ━━━━━━━"
+source ./scripts/shared.sh
+
+echo "┏━━━ 🕵️‍♀️ $PACKAGE_NAME: format:write ━━━━━━━"
 prettier --ignore-path .gitignore --write "**/*.+(js|json|ts)" 
