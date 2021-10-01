@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dankreiger/tiny-either/compare/v1.0.2...v1.0.3) (2021-10-01)
+
+
+### Bug Fixes
+
+* improve tree-shaking ([139892b](https://github.com/dankreiger/tiny-either/commit/139892be092aa418514288a41739278a87c99aca))
+
 ## [1.0.2](https://github.com/dankreiger/tiny-either/compare/v1.0.1...v1.0.2) (2021-10-01)
 
 
