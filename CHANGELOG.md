@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/dankreiger/tiny-either/compare/v1.0.5...v1.0.6) (2021-10-01)
+
+
+### Bug Fixes
+
+* **esm:** make dev utils tree shakeable ([6ee4874](https://github.com/dankreiger/tiny-either/commit/6ee487443be4855d93309eb6d9bd6e0288accbf2))
+* **hooks:** add main branch protection in precommit hook ([8105e13](https://github.com/dankreiger/tiny-either/commit/8105e139e008e86abf4853d205cc238f0c737d1e))
+
 ## [1.0.5](https://github.com/dankreiger/tiny-either/compare/v1.0.4...v1.0.5) (2021-10-01)
 
 
