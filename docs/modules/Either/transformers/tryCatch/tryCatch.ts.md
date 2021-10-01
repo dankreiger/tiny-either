@@ -1,6 +1,6 @@
 ---
-title: Either/xf/tryCatch/tryCatch.ts
-nav_order: 7
+title: Either/transformers/tryCatch/tryCatch.ts
+nav_order: 11
 parent: Modules
 ---
 

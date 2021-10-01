@@ -1,6 +1,6 @@
 ---
 title: Either/Left/interfaces/I_Left.interfaces.ts
-nav_order: 2
+nav_order: 6
 parent: Modules
 ---
 
@@ -28,7 +28,6 @@ export interface I_Left<T> {
   chain: (f: (x: any) => any) => I_Left<T>
   map: (f: (x: any) => any) => I_Left<T>
   fold: <R>(f: (x: T) => R, g: (x: any) => any) => R
-  inspect: () => `Left(${string})`
 }
 ```
 

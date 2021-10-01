@@ -1,6 +1,6 @@
 ---
-title: Either/xf/fromNullable/fromNullable.ts
-nav_order: 6
+title: Either/transformers/fromNullable/fromNullable.ts
+nav_order: 10
 parent: Modules
 ---
 

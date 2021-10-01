@@ -5,7 +5,7 @@ describe('Right', () => {
     const mapped = Right(10).map((x) => x + 20);
     expect(
       mapped.fold(
-        (_) => _,
+        (_) => undefined,
         (x) => x
       )
     ).toEqual(30);
@@ -15,7 +15,7 @@ describe('Right', () => {
     const chained = Right(10).chain((x) => Right(20 + x));
     expect(
       chained.fold(
-        (err) => err,
+        (_) => undefined,
         (x) => x
       )
     ).toEqual(30);

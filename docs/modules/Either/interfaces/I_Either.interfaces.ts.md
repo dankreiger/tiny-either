@@ -1,6 +1,6 @@
 ---
 title: Either/interfaces/I_Either.interfaces.ts
-nav_order: 1
+nav_order: 5
 parent: Modules
 ---
 

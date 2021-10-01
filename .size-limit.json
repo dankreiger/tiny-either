@@ -1,10 +1,19 @@
 [
   {
+    "name": "CommonJS",
     "path": "./dist/cjs/index.js",
-    "limit": "10 KB"
+    "limit": "140 B"
   },
   {
+    "name": "ESM: Either",
     "path": "./dist/esm/index.js",
-    "limit": "10 KB"
+    "limit": "5 B",
+    "import": "Either"
+  },
+  {
+    "name": "ESM: inspect",
+    "path": "./dist/esm/index.js",
+    "limit": "125 B",
+    "import": "{ inspect }"
   }
 ]

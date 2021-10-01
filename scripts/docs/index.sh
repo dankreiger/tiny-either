@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
-echo "┏━━━ 📚 DOCS ━━━━━━━"
+source ./scripts/shared.sh
+
+echo "┏━━━ 📚 $PACKAGE_NAME: docs ━━━━━━━"
 rimraf docs && docs-ts

@@ -1,6 +1,6 @@
 ---
 title: Either/Right/interfaces/I_Right.interfaces.ts
-nav_order: 4
+nav_order: 8
 parent: Modules
 ---
 
@@ -28,7 +28,6 @@ export interface I_Right<T> {
   chain: <U>(f: (x: T) => U) => U
   map: <U>(f: (x: T) => U) => I_Right<U>
   fold: <R>(f: (x: any) => any, g: (x: T) => R) => R
-  inspect: () => `Right(${string})`
 }
 ```
 

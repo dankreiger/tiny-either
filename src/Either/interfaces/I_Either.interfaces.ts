@@ -3,7 +3,7 @@
  */
 import type { Left } from '../Left';
 import type { Right } from '../Right';
-import type { fromNullable, tryCatch } from '../xf';
+import type { fromNullable, tryCatch } from '../transformers';
 
 /**
  * @since 1.0.0
