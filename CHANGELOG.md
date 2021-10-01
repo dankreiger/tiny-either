@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dankreiger/tiny-either/compare/v1.0.3...v1.0.4) (2021-10-01)
+
+
+### Bug Fixes
+
+* update tests ([19c0988](https://github.com/dankreiger/tiny-either/commit/19c09882966b657b792e530296584236be9de3e7))
+
 ## [1.0.3](https://github.com/dankreiger/tiny-either/compare/v1.0.2...v1.0.3) (2021-10-01)
 
 
