@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/dankreiger/tiny-either/compare/v1.0.7...v1.0.8) (2021-10-01)
+
+
+### Bug Fixes
+
+* reintroduce cjs ([6402490](https://github.com/dankreiger/tiny-either/commit/6402490af6d465c8e96d547d3609871b9ebb4208))
+* update docs ([47d1f04](https://github.com/dankreiger/tiny-either/commit/47d1f04a24d39a64ef6a75261581027494225f53))
+
 ## [1.0.7](https://github.com/dankreiger/tiny-either/compare/v1.0.6...v1.0.7) (2021-10-01)
 
 
