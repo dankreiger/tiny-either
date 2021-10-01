@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/dankreiger/tiny-either/compare/v1.0.4...v1.0.5) (2021-10-01)
+
+
+### Bug Fixes
+
+* update package lock file ([6e7a88c](https://github.com/dankreiger/tiny-either/commit/6e7a88ca0ac7c9c8162f2ea1a93cce985c1e07b1))
+
 ## [1.0.4](https://github.com/dankreiger/tiny-either/compare/v1.0.3...v1.0.4) (2021-10-01)
 
 
