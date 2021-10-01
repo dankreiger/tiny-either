@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/dankreiger/tiny-either/compare/v1.0.6...v1.0.7) (2021-10-01)
+
+
+### Bug Fixes
+
+* **esm:** remove commonjs bundle ([aa2b1d0](https://github.com/dankreiger/tiny-either/commit/aa2b1d00c2c09f2815e02e59040d7df8233402bc))
+
 ## [1.0.6](https://github.com/dankreiger/tiny-either/compare/v1.0.5...v1.0.6) (2021-10-01)
 
 
