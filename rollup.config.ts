@@ -3,15 +3,30 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
-
 const pkg = require('./package.json');
+const babelRuntimeVersion = pkg.devDependencies['@babel/runtime'].replace(
+  /^[^0-9]*/,
+  ''
+);
+const cjs = () => [
+  terser({
+    output: { comments: false },
+    compress: {
+      unsafe: true,
+      keep_infinity: true,
+      pure_getters: true,
+      passes: 10,
+    },
+    ecma: 5,
+  }),
+];
 const config = [
   {
     file: pkg.main,
     format: 'cjs',
   },
   {
-    file: pkg.esm,
+    file: pkg.module,
     format: 'es',
   },
 ].map((output) => ({
@@ -36,6 +51,7 @@ const config = [
   },
   plugins: [
     resolve(),
+    commonjs(),
     typescript({
       tsconfigDefaults: {
         exclude: [
@@ -63,19 +79,14 @@ const config = [
       },
     }),
     babel({
-      babelHelpers: 'bundled',
       exclude: 'node_modules/**',
+      plugins: [
+        '@babel/plugin-transform-runtime',
+        { version: babelRuntimeVersion, useESModules: output.format === 'es' },
+      ],
+      babelHelpers: 'runtime',
     }),
-    commonjs(),
-    terser({
-      output: { comments: false },
-      compress: {
-        keep_infinity: true,
-        pure_getters: true,
-        passes: 10,
-      },
-      ecma: 5,
-    }),
+    ...[output.format === 'cjs' && cjs()],
   ],
   external: [...Object.keys(pkg.devDependencies)],
 }));
