@@ -1,12 +1,23 @@
 import { Right } from '.';
 
 describe('Right', () => {
-  test('smoke', () => {
-    expect(Right(10).inspect()).toBe('Right(10)');
+  test('map', () => {
+    const mapped = Right(10).map((x) => x + 20);
     expect(
-      Right(10)
-        .map((x) => x + 20)
-        .inspect()
-    ).toBe('Right(30)');
+      mapped.fold(
+        (_) => _,
+        (x) => x
+      )
+    ).toEqual(30);
+  });
+
+  test('chain', () => {
+    const chained = Right(10).chain((x) => Right(20 + x));
+    expect(
+      chained.fold(
+        (err) => err,
+        (x) => x
+      )
+    ).toEqual(30);
   });
 });
