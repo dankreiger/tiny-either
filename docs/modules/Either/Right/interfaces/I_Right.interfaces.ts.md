@@ -1,12 +1,12 @@
 ---
 title: Either/Right/interfaces/I_Right.interfaces.ts
-nav_order: 8
+nav_order: 5
 parent: Modules
 ---
 
 ## I_Right.interfaces overview
 
-Added in v0.0.0
+Added in v1.0.7
 
 ---
 
@@ -25,10 +25,11 @@ Added in v0.0.0
 
 ```ts
 export interface I_Right<T> {
-  chain: <U>(f: (x: T) => U) => U
-  map: <U>(f: (x: T) => U) => I_Right<U>
-  fold: <R>(f: (x: any) => any, g: (x: T) => R) => R
+  readonly _meta: { _tag: 'Right'; _value: T }
+  readonly chain: <U>(f: (x: T) => U) => U
+  readonly map: <U>(f: (x: T) => U) => I_Right<U>
+  readonly fold: <R>(f: (x: unknown) => unknown, g: (x: T) => R) => R
 }
 ```
 
-Added in v0.0.0
+Added in v1.0.7

@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
-const pkg = require('./package.json');
+import pkg from './package.json';
+
 const babelRuntimeVersion = pkg.devDependencies['@babel/runtime'].replace(
   /^[^0-9]*/,
   ''
@@ -11,14 +13,18 @@ const babelRuntimeVersion = pkg.devDependencies['@babel/runtime'].replace(
 
 const config = [
   {
-    file: pkg.main,
-    format: 'cjs',
+    output: {
+      file: pkg.main,
+      format: 'cjs',
+    },
   },
   {
-    file: pkg.module,
-    format: 'es',
+    output: {
+      file: pkg.module,
+      format: 'es',
+    },
   },
-].map((output) => ({
+].map(({ output }) => ({
   input: 'src/index.ts',
   output,
   treeshake: {
@@ -57,7 +63,10 @@ const config = [
       exclude: 'node_modules/**',
       plugins: [
         '@babel/plugin-transform-runtime',
-        { version: babelRuntimeVersion, useESModules: output.format === 'es' },
+        {
+          version: babelRuntimeVersion,
+          useESModules: output.format === 'es',
+        },
       ],
       babelHelpers: 'runtime',
     }),

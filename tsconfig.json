@@ -5,7 +5,6 @@
     "declarationDir": "./dist/types",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "lib": [],
     "types": ["node", "jest"],
     "sourceMap": false,
     "declaration": true,
@@ -16,7 +15,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "stripInternal": true
+    "stripInternal": true,
+    "resolveJsonModule": true
   },
   "include": ["./src"]
 }

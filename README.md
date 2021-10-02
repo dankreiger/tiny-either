@@ -17,4 +17,10 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
   npm install tiny-either
 ```
 
+## Usage
+
+```ts
+import * as E from 'tiny-either';
+```
+
 More info coming

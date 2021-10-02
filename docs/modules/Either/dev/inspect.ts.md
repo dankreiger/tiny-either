@@ -24,7 +24,7 @@ Added in v1.0.6
 **Signature**
 
 ```ts
-export declare function inspect(E: I_Either): T_EitherInspect
+export declare function inspect<T extends 'Left' | 'Right', U>(Type: T, x: U): I_Inspect<T, U>
 ```
 
-Added in v1.0.5
+Added in v1.0.6

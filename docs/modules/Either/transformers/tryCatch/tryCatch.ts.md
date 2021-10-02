@@ -1,6 +1,6 @@
 ---
 title: Either/transformers/tryCatch/tryCatch.ts
-nav_order: 11
+nav_order: 8
 parent: Modules
 ---
 
@@ -27,4 +27,4 @@ Added in v0.0.0
 export declare function tryCatch<T>(f: () => T): I_Right<T>
 ```
 
-Added in v0.0.0
+Added in v1.0.7

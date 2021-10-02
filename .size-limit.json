@@ -2,42 +2,29 @@
   {
     "name": "CJS",
     "path": "./dist/cjs/index.js",
-    "limit": "205 B"
+    "limit": "160 B"
   },
   {
-    "name": "ESM: Left",
-    "path": "./dist/esm/index.js",
-    "limit": "4 B",
-    "import": "{ Left }"
+    "name": "ES",
+    "path": "./dist/es/index.js",
+    "limit": "162 B"
   },
   {
-    "name": "ESM: Right",
-    "path": "./dist/esm/index.js",
-    "limit": "4 B",
-    "import": "{ Right }"
-  },
-  {
-    "name": "ESM: of",
-    "path": "./dist/esm/index.js",
-    "limit": "4 B",
+    "name": "ES: of",
+    "path": "./dist/es/index.js",
+    "limit": "57 B",
     "import": "{ of }"
   },
   {
-    "name": "ESM: fromNullable",
-    "path": "./dist/esm/index.js",
-    "limit": "4 B",
+    "name": "ES: fromNullable",
+    "path": "./dist/es/index.js",
+    "limit": "85 B",
     "import": "{ fromNullable }"
   },
   {
-    "name": "ESM: tryCatch",
-    "path": "./dist/esm/index.js",
-    "limit": "4 B",
+    "name": "ES: tryCatch",
+    "path": "./dist/es/index.js",
+    "limit": "92 B",
     "import": "{ tryCatch }"
-  },
-  {
-    "name": "ESM: inspect (dev only)",
-    "path": "./dist/esm/index.js",
-    "limit": "121 B",
-    "import": "{ inspect }"
   }
 ]
