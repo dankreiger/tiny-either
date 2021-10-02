@@ -1,12 +1,12 @@
 ---
 title: Either/Left/interfaces/I_Left.interfaces.ts
-nav_order: 6
+nav_order: 3
 parent: Modules
 ---
 
 ## I_Left.interfaces overview
 
-Added in v1.0.0
+Added in v1.0.7
 
 ---
 
@@ -25,10 +25,11 @@ Added in v1.0.0
 
 ```ts
 export interface I_Left<T> {
-  chain: (f: (x: any) => any) => I_Left<T>
-  map: (f: (x: any) => any) => I_Left<T>
-  fold: <R>(f: (x: T) => R, g: (x: any) => any) => R
+  readonly _meta: { _tag: 'Left'; _value: T }
+  readonly chain: (f: (x: unknown) => unknown) => I_Left<T>
+  readonly map: (f: (x: unknown) => unknown) => I_Left<T>
+  readonly fold: <R>(f: (x: T) => R, g: (x: unknown) => unknown) => R
 }
 ```
 
-Added in v1.0.0
+Added in v1.0.7

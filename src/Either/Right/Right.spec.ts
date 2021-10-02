@@ -20,4 +20,8 @@ describe('Right', () => {
       )
     ).toEqual(30);
   });
+
+  test('_meta', () => {
+    expect(Right(10)._meta).toEqual({ _tag: 'Right', _value: 10 });
+  });
 });

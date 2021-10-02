@@ -1,6 +1,6 @@
 ---
 title: Either/transformers/fromNullable/fromNullable.ts
-nav_order: 10
+nav_order: 7
 parent: Modules
 ---
 
@@ -24,8 +24,8 @@ Added in v0.0.0
 **Signature**
 
 ```ts
-export declare function fromNullable<T>(x: NonNullable<T>): I_Right<T>
-export declare function fromNullable<T extends null | undefined>(x: T): I_Left<T>
+export declare function fromNullable<T>(value: NonNullable<T>): I_Right<T>
+export declare function fromNullable<T extends null | undefined>(value: T): I_Left<T>
 ```
 
-Added in v0.0.0
+Added in v1.0.7

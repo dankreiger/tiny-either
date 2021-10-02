@@ -1,0 +1,9 @@
+{
+  "babel": {
+    "configFile": "./.babelrc",
+    "ts": true,
+    "plugins": [
+      "@babel/plugin-transform-typescript"
+    ]
+  }
+}
