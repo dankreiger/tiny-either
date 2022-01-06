@@ -28,6 +28,10 @@
             "release": "patch"
           },
           {
+            "type": "feat",
+            "release": "patch"
+          },
+          {
             "scope": "no-release",
             "release": false
           }

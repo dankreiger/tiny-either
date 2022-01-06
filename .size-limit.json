@@ -2,12 +2,12 @@
   {
     "name": "CJS",
     "path": "./dist/cjs/index.js",
-    "limit": "160 B"
+    "limit": "200 B"
   },
   {
     "name": "ES",
     "path": "./dist/es/index.js",
-    "limit": "162 B"
+    "limit": "200 B"
   },
   {
     "name": "ES: of",
@@ -26,5 +26,11 @@
     "path": "./dist/es/index.js",
     "limit": "92 B",
     "import": "{ tryCatch }"
+  },
+  {
+    "name": "ES: fromPredicate",
+    "path": "./dist/es/index.js",
+    "limit": "92 B",
+    "import": "{ fromPredicate }"
   }
 ]
