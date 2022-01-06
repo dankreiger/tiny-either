@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/dankreiger/tiny-either/compare/v1.0.12...v1.0.13) (2022-01-06)
+
+
+### Features
+
+* **functions:** add fromPredicate ([#34](https://github.com/dankreiger/tiny-either/issues/34)) ([7f04937](https://github.com/dankreiger/tiny-either/commit/7f049373c9ebe2c74d5edddefe0080a899ff5749))
+
 ## [1.0.12](https://github.com/dankreiger/tiny-either/compare/v1.0.11...v1.0.12) (2021-12-11)
 
 ## [1.0.11](https://github.com/dankreiger/tiny-either/compare/v1.0.10...v1.0.11) (2021-10-05)
