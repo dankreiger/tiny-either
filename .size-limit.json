@@ -26,5 +26,11 @@
     "path": "./dist/es/index.js",
     "limit": "92 B",
     "import": "{ tryCatch }"
+  },
+  {
+    "name": "ES: fromPredicate",
+    "path": "./dist/es/index.js",
+    "limit": "92 B",
+    "import": "{ fromPredicate }"
   }
 ]
