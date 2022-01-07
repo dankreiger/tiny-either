@@ -31,7 +31,7 @@ export function /*#__PURE__*/ fromPredicate<T>(
   errMessage: (value: T) => string
 ) {
   return function check(value: T): I_Left<string> | I_Right<T> {
-    if (predicate(value)) Right(value);
+    if (predicate(value)) return Right(value);
     return Left(errMessage(value));
   };
 }
