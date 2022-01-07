@@ -1,3 +1,5 @@
+## [1.0.14](https://github.com/dankreiger/tiny-either/compare/v1.0.13...v1.0.14) (2022-01-07)
+
 ## [1.0.13](https://github.com/dankreiger/tiny-either/compare/v1.0.12...v1.0.13) (2022-01-06)
 
 
