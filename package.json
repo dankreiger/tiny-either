@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/tiny-either",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Lightweight Either Monad",
   "keywords": [
     "either",
