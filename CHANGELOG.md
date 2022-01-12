@@ -1,3 +1,10 @@
+## [1.0.27](https://github.com/dankreiger/tiny-either/compare/v1.0.26...v1.0.27) (2022-01-12)
+
+
+### Bug Fixes
+
+* **ci:** improve PR release workflow ([#49](https://github.com/dankreiger/tiny-either/issues/49)) ([c243595](https://github.com/dankreiger/tiny-either/commit/c2435954750eb40d0a447715a4eceae354f84ba2))
+
 ## [1.0.26](https://github.com/dankreiger/tiny-either/compare/v1.0.25...v1.0.26) (2022-01-12)
 
 
