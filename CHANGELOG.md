@@ -1,3 +1,10 @@
+## [1.0.31](https://github.com/dankreiger/tiny-either/compare/v1.0.30...v1.0.31) (2022-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update babel monorepo to v7.16.8 ([#43](https://github.com/dankreiger/tiny-either/issues/43)) ([b59fe4c](https://github.com/dankreiger/tiny-either/commit/b59fe4ca99ddeb7bb207424a8057a15bf7ffad40))
+
 ## [1.0.30](https://github.com/dankreiger/tiny-either/compare/v1.0.29...v1.0.30) (2022-01-12)
 
 
