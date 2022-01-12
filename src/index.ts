@@ -1,2 +1,2 @@
-/** @since 0.0.0 */
+/** @since 1.0.13 */
 export * from './Either';
