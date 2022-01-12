@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/dankreiger/tiny-either/compare/v1.0.25...v1.0.26) (2022-01-12)
+
+
+### Bug Fixes
+
+* **changelog:** improve changelog generation ([#47](https://github.com/dankreiger/tiny-either/issues/47)) ([440eaad](https://github.com/dankreiger/tiny-either/commit/440eaadcb2d8a7e81c919104b80190d4f2f9d017))
+
 ## [1.0.13](https://github.com/dankreiger/tiny-either/compare/v1.0.12...v1.0.13) (2022-01-06)
 
 
