@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/dankreiger/tiny-either/compare/v1.0.28...v1.0.29) (2022-01-12)
+
+
+### Features
+
+* **ci:** add monthly cron for npm audit ([#50](https://github.com/dankreiger/tiny-either/issues/50)) ([06a8557](https://github.com/dankreiger/tiny-either/commit/06a8557835dcc5e419631cc412e034353b0273ba))
+
 ## [1.0.27](https://github.com/dankreiger/tiny-either/compare/v1.0.26...v1.0.27) (2022-01-12)
 
 
