@@ -1,3 +1,10 @@
+## [1.0.32](https://github.com/dankreiger/tiny-either/compare/v1.0.31...v1.0.32) (2022-01-12)
+
+
+### Bug Fixes
+
+* **gh-pages:** add gh pages ([#52](https://github.com/dankreiger/tiny-either/issues/52)) ([6ea2d91](https://github.com/dankreiger/tiny-either/commit/6ea2d910c3741ae0e6e563dc83008d11f15fa02f))
+
 ## [1.0.31](https://github.com/dankreiger/tiny-either/compare/v1.0.30...v1.0.31) (2022-01-12)
 
 
