@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/dankreiger/tiny-either/compare/v1.0.29...v1.0.30) (2022-01-12)
+
+
+### Bug Fixes
+
+* **changelog:** remove blank entry [no-ci] ([#51](https://github.com/dankreiger/tiny-either/issues/51)) ([e3f62ff](https://github.com/dankreiger/tiny-either/commit/e3f62ffbced6e53ea1950c5a5efb0623bff4b4ef))
+
 ## [1.0.29](https://github.com/dankreiger/tiny-either/compare/v1.0.28...v1.0.29) (2022-01-12)
 
 
