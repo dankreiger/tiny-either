@@ -5,13 +5,6 @@
 
 * **ci:** add monthly cron for npm audit ([#50](https://github.com/dankreiger/tiny-either/issues/50)) ([06a8557](https://github.com/dankreiger/tiny-either/commit/06a8557835dcc5e419631cc412e034353b0273ba))
 
-## [1.0.28](https://github.com/dankreiger/tiny-either/compare/v1.0.27...v1.0.28) (2022-01-12)
-
-
-### Bug Fixes
-
-* **ci:** improve PR release workflow ([#48](https://github.com/dankreiger/tiny-either/issues/48)) ([1db59ef](https://github.com/dankreiger/tiny-either/commit/1db59ef9cbf9415a8ae9cb43f56505f79529faa9))
-
 ## [1.0.27](https://github.com/dankreiger/tiny-either/compare/v1.0.26...v1.0.27) (2022-01-12)
 
 
