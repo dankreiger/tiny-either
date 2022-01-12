@@ -5,5 +5,6 @@ const of = Right;
 
 /**
  * @since 1.0.0
+ * @category Either
  */
 export { fromNullable, fromPredicate, tryCatch, of };

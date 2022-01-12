@@ -4,6 +4,7 @@ import { I_Right, Right } from '../../Right';
 
 type T_Predicate<T> = (value: T) => boolean;
 /**
+ * @category Either
  * @since 1.0.12
  * @description
  * Given type T_Predicate<T>:
