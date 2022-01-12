@@ -7,3 +7,4 @@ search_enabled: true
 aux_links:
   '@dankreiger/tiny-either on GitHub':
     - 'https://github.com/dankreiger/tiny-either'
+theme: jekyll-theme-cayman
