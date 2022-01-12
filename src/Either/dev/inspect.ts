@@ -5,6 +5,8 @@ import type { I_Inspect } from './interfaces';
 
 /**
  * @since 1.0.6
+ * @category Either
+ * @hidden
  */
 export function inspect<T extends 'Left' | 'Right', U>(
   Type: T,

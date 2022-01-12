@@ -8,4 +8,4 @@ if [ "$CURRENT_BRANCH" = "main" ]; then
 fi
 npm run build
 npm run docs &&
-npx lint-staged
+  npx lint-staged

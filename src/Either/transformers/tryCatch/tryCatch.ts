@@ -5,6 +5,7 @@ import type { I_Right } from '../../Right';
 import { Right } from '../../Right';
 
 /**
+ * @category Either
  * @since 1.0.7
  * @description
  * Given the type () => T:
