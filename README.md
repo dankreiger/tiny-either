@@ -2,6 +2,8 @@
 
 A lightweight `Either` monad.
 
+[Docs](https://dankreiger.github.io/tiny-either/)
+
 ## Badges
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
