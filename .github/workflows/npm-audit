@@ -1,0 +1,39 @@
+name: NPM Audit
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-
+      - name: Install Dependencies
+        run: yarn
+      - name: Run a security audit
+        run: npx audit-ci --critical --report-type summary
+
+      # TODO!:
+      # - name: Report Status
+      #   if: ${{ always() && github.repository_owner == 'dankreiger' }}
+      #   uses: ravsamhq/notify-slack-action@v1
+      #   with:
+      #     status: ${{ job.status }}
+      #     message_format: '{emoji} *{workflow}* {status_message} on <{commit_url}|{commit_sha}>'
+      #     notification_title: '{workflow} has {status_message}'
+      #     footer: 'From <{repo_url}|{repo}>'
+      #     mention_users: 'U01UELKLYF2'
+      #     mention_users_when: 'failure,warnings'
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
