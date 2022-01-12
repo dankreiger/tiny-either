@@ -1,3 +1,10 @@
+## [1.0.33](https://github.com/dankreiger/tiny-either/compare/v1.0.32...v1.0.33) (2022-01-12)
+
+
+### Bug Fixes
+
+* **README:** update readme with docs ([#56](https://github.com/dankreiger/tiny-either/issues/56)) ([f053e10](https://github.com/dankreiger/tiny-either/commit/f053e10bd46af14d12ff0534ce22b281a7ed887b))
+
 ## [1.0.32](https://github.com/dankreiger/tiny-either/compare/v1.0.31...v1.0.32) (2022-01-12)
 
 
