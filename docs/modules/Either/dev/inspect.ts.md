@@ -12,12 +12,12 @@ Added in v1.0.6
 
 <h2 class="text-delta">Table of contents</h2>
 
-- [utils](#utils)
+- [Either](#either)
   - [inspect](#inspect)
 
 ---
 
-# utils
+# Either
 
 ## inspect
 

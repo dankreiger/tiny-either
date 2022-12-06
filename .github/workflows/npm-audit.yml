@@ -2,7 +2,7 @@ name: NPM Audit
 
 on:
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:
@@ -17,9 +17,9 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-
       - name: Install Dependencies
-        run: yarn
+        run: npm install
       - name: Run a security audit
         run: npx audit-ci --critical --report-type summary
