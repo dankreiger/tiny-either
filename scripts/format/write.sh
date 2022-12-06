@@ -2,4 +2,4 @@
 source ./scripts/shared.sh
 
 echo "┏━━━ 🕵️‍♀️ $PACKAGE_NAME: format:write ━━━━━━━"
-prettier --ignore-path .gitignore --write "**/*.+(js|json|ts)" 
+sort-package-json && prettier --ignore-path .gitignore --write "**/*.+(js|json|ts)"
