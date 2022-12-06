@@ -28,6 +28,10 @@
             "release": "patch"
           },
           {
+            "scope": "chore",
+            "release": false
+          },
+          {
             "scope": "no-release",
             "release": false
           }

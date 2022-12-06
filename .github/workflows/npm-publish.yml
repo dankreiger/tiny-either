@@ -1,10 +1,10 @@
-name: Main
+name: Publish to NPM Registry
 on:
-  push:
-    branches: [main]
+  release:
+    types: [created]
 jobs:
-  build_test_release:
-    name: 'On Main Push - Build, Test, Release'
+  publish:
+    name: 'On Main Push - Release version to NPM Registry'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -17,10 +17,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@dankreiger'
 
-      - name: Use Node 18.
+      - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.1
+          node-version: ${{ matrix.node }}
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
@@ -35,7 +35,16 @@ jobs:
         run: npm run build
 
       - name: Create release and publish scoped package
-        run: npx semantic-release
+        run: npm run release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish unscoped package
+        run: |
+          sed -ie 's/@dankreiger\///g' package.json
+          npm publish
+          mv package.jsone package.json
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

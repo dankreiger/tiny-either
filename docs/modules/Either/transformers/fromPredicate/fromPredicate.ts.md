@@ -12,12 +12,12 @@ Added in v1.0.12
 
 <h2 class="text-delta">Table of contents</h2>
 
-- [utils](#utils)
+- [Either](#either)
   - [fromPredicate](#frompredicate)
 
 ---
 
-# utils
+# Either
 
 ## fromPredicate
 
